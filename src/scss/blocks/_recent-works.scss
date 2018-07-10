@@ -1,4 +1,5 @@
 .recent-works {
+    margin-bottom: 28px;
     &__header {
         color: $red;
         font-family: 'Bebas';
@@ -10,22 +11,55 @@
         width: 100%;
         margin-bottom: 22px;
     }
+    &__inner {
+        justify-content: space-around;
+    }
     &__item {
         @include col(12);
+        margin: 0 0 20px 0;
+        text-align: center;
     }
+    &__item-inner {
+        display: inline-block;
+        text-align: initial;
+    }
+    
     &__title {
         color: $grey;
         font-family: 'Bebas';
         font-size: 16px;
         font-weight: 400;
         line-height: 18px;
-        padding: 10px 10px 8px 14px;
+        padding: 13px 10px 8px 14px;
         border-right: 1px solid #dbdbdb;
         border-left: 1px solid #dbdbdb;
+        margin-top: -3px;
+    }
+    &__date {
+        color: $orange;
+        font-family: 'Bebas';
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 18px;
+        padding: 0 10px 15px 14px;
+        border-right: 1px solid #dbdbdb;
+        border-left: 1px solid #dbdbdb;
+        border-bottom: 1px solid #dbdbdb;
+    }
+    @media (min-width: 450px) {
+        &__item {
+            @include col(5);
+            margin-right: 0;
+        }
     }
     @media (min-width: 720px) {
+        &__inner {
+            justify-content: space-between;
+        }
         &__item {
             @include col(4);
+            margin-bottom: 0;
         }
+        margin-bottom: 48px;
     }
 }
