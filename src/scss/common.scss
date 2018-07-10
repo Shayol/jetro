@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Bebas";
+    src: url("../fonts/Bebas/Bebas.woff2") format("woff2"),
+    url("../fonts/Bebas/Bebas.woff") format("woff"),
+    url("../fonts/Bebas/Bebas.ttf") format("truetype");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("../fonts/Helvetica Neue/HelveticaNeue.woff2") format("woff2"),
+    url("../fonts/Helvetica Neue/HelveticaNeue.woff") format("woff"),
+    url("../fonts/Helvetica Neue/HelveticaNeue.ttf") format("truetype");
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+*, *::before,*::after {
+    box-sizing: border-box;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+$red: #e8603c;
+$washedOutRed: #f3af9d;
+$grey: #b9b9b9;
+$orange: #e8663c;

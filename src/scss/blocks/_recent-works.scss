@@ -1,0 +1,31 @@
+.recent-works {
+    &__header {
+        color: $red;
+        font-family: 'Bebas';
+        font-size: 18px;
+        font-weight: 400;
+        background-image: url('../img/decor-line.png');
+        background-position: left 130px top 0;
+        background-repeat: no-repeat;
+        width: 100%;
+        margin-bottom: 22px;
+    }
+    &__item {
+        @include col(12);
+    }
+    &__title {
+        color: $grey;
+        font-family: 'Bebas';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        padding: 10px 10px 8px 14px;
+        border-right: 1px solid #dbdbdb;
+        border-left: 1px solid #dbdbdb;
+    }
+    @media (min-width: 720px) {
+        &__item {
+            @include col(4);
+        }
+    }
+}

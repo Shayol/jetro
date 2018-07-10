@@ -11,22 +11,24 @@
 <body>
     <div class="header">
         <div class="container">
-            <div class="logo">jetro</div>
+            <div class="header__logo logo">jet
+                <span class="logo__colored">ro</span>
+            </div>
             <ul class="nav">
                 <li class="nav__item">
-                    <a href="#">home</a>
+                    <a class="nav__link" href="#">home</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#">about us</a>
+                    <a class="nav__link" href="#">about us</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#">blog</a>
+                    <a class="nav__link" href="#">blog</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#">portfolio</a>
+                    <a class="nav__link" href="#">portfolio</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#">contact us</a>
+                    <a class="nav__link" href="#">contact us</a>
                 </li>
             </ul>
         </div>
@@ -34,92 +36,128 @@
     <div class="decor-streak decor-streak--top"></div>
     <div class="big-slider">
         <div class="container">
-            <div class="arrow arrow__previous"></div>
-            <div class="arrow arrow__next"></div>
-            <div class="big-slider__item">
-                <div class="big-slider__descr">
-                    <div class="big-slider__header">Slide  One</div>
-                    <div class="big-slider__text">Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea.</div>
+            <div class="big-slider__wrapper">
+                <div class="arrow arrow__previous"></div>
+                <div class="arrow arrow__next"></div>
+                <div class="big-slider__item big-slider__item--1">
+                    <div class="big-slider__descr">
+                        <div class="big-slider__header">Slide One</div>
+                        <div class="big-slider__text">Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per
+                            at tritani aperiri. Adhuc invenire convenire his ea.</div>
+                    </div>
                 </div>
+                <div class="big-slider__item big-slider__item--2"></div>
+                <div class="big-slider__item big-slider__item--3"></div>
+                <div class="big-slider__item big-slider__item--4"></div>
+                <div class="big-slider__item big-slider__item--5"></div>
+                <div class="big-slider__item big-slider__item--6"></div>
             </div>
-            <div class="big-slider__item"></div>
-            <div class="big-slider__item"></div>
-            <div class="big-slider__item"></div>
-            <div class="big-slider__item"></div>
-            <div class="big-slider__item"></div>
         </div>
     </div>
     <div class="sliders">
         <div class="container">
-            <div style="background-image:url('../img/slide1.png')" class="sliders__item"></div>
-            <div style="background-image:url('../img/slide2.png')" class="sliders__item"></div>
-            <div style="background-image:url('../img/slide3.png')" class="sliders__item"></div>
-            <div style="background-image:url('../img/slide4.png')" class="sliders__item"></div>
-            <div style="background-image:url('../img/slide5.png')" class="sliders__item"></div>
-            <div style="background-image:url('../img/slide6.png')" class="sliders__item"></div>
+            <div class="sliders__item sliders__item--1">
+                <img src="../img/slide1.png" alt="" class="sliders__img">
+            </div>
+            <div class="sliders__item sliders__item--2">
+                <img src="../img/slide2.png" alt="" class="sliders__img">
+            </div>
+            <div class="sliders__item sliders__item--3">
+                <img src="../img/slide3.png" alt="" class="sliders__img">
+            </div>
+            <div class="sliders__item sliders__item--4">
+                <img src="../img/slide4.png" alt="" class="sliders__img">
+            </div>
+            <div class="sliders__item sliders__item--5">
+                <img src="../img/slide5.png" alt="" class="sliders__img">
+            </div>
+            <div class="sliders__item sliders__item--6">
+                <img src="../img/slide6.png" alt="" class="sliders__img">
+            </div>
         </div>
     </div>
     <div class="features">
         <div class="container">
             <div class="features__item">
-                <img src="../img/portfolio-icon.png" alt="" class="features__icon">
-                <div class="features__title"></div>
-                <div class="features__text"></div>
-                <a href="#" class="button">more</a>
+                <div class="features__header">
+                    <img src="../img/portfolio-icon.png" alt="" class="features__icon">
+                    <div class="features__title">Check out my latest
+                        <br>portfolio items</div>
+                </div>
+                <div class="features__text">
+                    Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re
+                    ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum
+                    iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+                </div>
+                <a href="#" class="features__button">more</a>
             </div>
             <div class="features__item">
-                <img src="../img/work-servises-icon.png" alt="" class="features__icon">
-                <div class="features__title"></div>
-                <div class="features__text"></div>
-                <a href="#" class="button">more</a>
+                <div class="features__header">
+                    <img src="../img/work-servises-icon.png" alt="" class="features__icon">
+                    <div class="features__title">Offer Top Notch Quality
+                        <br> Work & Services</div>
+                </div>
+                <div class="features__text">
+                    Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re
+                    ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum
+                    iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+                </div>
+                <a href="#" class="features__button">more</a>
             </div>
             <div class="features__item">
-                <img src="../img/follow-icon.png" alt="" class="features__icon">
-                <div class="features__title"></div>
-                <div class="features__text"></div>
-                <a href="#" class="button">more</a>
+                <div class="features__header">
+                    <img src="../img/follow-icon.png" alt="" class="features__icon">
+                    <div class="features__title">Follow Me on Twitter,
+                        <br>Facebook & Pinterest</div>
+                </div>
+                <div class="features__text">
+                    Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re
+                    ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum
+                    iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+                </div>
+                <a href="#" class="features__button">more</a>
             </div>
         </div>
     </div>
     <div class="recent-works">
         <div class="container">
-            <div class="recent-works__title">Recent Works</div>
-            <div class="recent-works__wrapper">
-                <div class="recent-works__item">
-                    <img src="../img/character-design.png" alt="character design" class="recent-wrapper__image">
-                    <div class="recent-works__title">
-                        Character Design
-                    </div>
-                    <div class="recent-works__date">
-                        June 15, 2012
-                    </div>
+            <div class="recent-works__header">Recent Works</div>
+        </div>
+        <div class="container">
+            <div class="recent-works__item">
+                <img src="../img/character-design.png" alt="character design" class="recent-wrapper__image">
+                <div class="recent-works__title">
+                    Character Design
                 </div>
-                <div class="recent-works__item">
-                    <img src="../img/brochure-design.png" alt="brochure design" class="recent-wrapper__image">
-                    <div class="recent-works__title">
-                        Brochure Design
-                    </div>
-                    <div class="recent-works__date">
-                        June 15, 2012
-                    </div>
+                <div class="recent-works__date">
+                    June 15, 2012
                 </div>
-                <div class="recent-works__item">
-                    <img src="../social-media-buttons.png" alt="" class="recent-wrapper__image">
-                    <div class="recent-works__title">
-                        Social Media Buttons
-                    </div>
-                    <div class="recent-works__date">
-                        June 15, 2012
-                    </div>
+            </div>
+            <div class="recent-works__item">
+                <img src="../img/brochure-design.png" alt="brochure design" class="recent-wrapper__image">
+                <div class="recent-works__title">
+                    Brochure Design
                 </div>
-                <div class="recent-works__item">
-                    <img src="amazing-websites.png" alt="" class="recent-wrapper__image">
-                    <div class="recent-works__title">
-                        10 Amazing Websites
-                    </div>
-                    <div class="recent-works__date">
-                        June 15, 2012
-                    </div>
+                <div class="recent-works__date">
+                    June 15, 2012
+                </div>
+            </div>
+            <div class="recent-works__item">
+                <img src="../img/social-media-buttons.png" alt="" class="recent-wrapper__image">
+                <div class="recent-works__title">
+                    Social Media Buttons
+                </div>
+                <div class="recent-works__date">
+                    June 15, 2012
+                </div>
+            </div>
+            <div class="recent-works__item">
+                <img src="../img/amazing-websites.png" alt="" class="recent-wrapper__image">
+                <div class="recent-works__title">
+                    10 Amazing Websites
+                </div>
+                <div class="recent-works__date">
+                    June 15, 2012
                 </div>
             </div>
         </div>
@@ -161,15 +199,35 @@
                         <div class="contact-us__title">Contact Us</div>
                         <div class="contact-us__text">
                             <p class="contact-us__paragraph">
-                                Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. 
+                                Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri.
                             </p>
-                            
+
                             <p class="contact-us__paragraph">
-                                information@jetro.com <br>
-                                1.222.333.4444
+                                information@jetro.com
+                                <br> 1.222.333.4444
                             </p>
                         </div>
-                        <div class="social-icons"><a href="#" class="social-icon__link"><img src="../img/facebook.png" alt="facebook"></a></div>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon__link">
+                                <img src="../img/facebook.png" alt="facebook">
+                            </a>
+                            <a href="#" class="social-icon__link">
+                                <img src="../img/twitter.png" alt="twitter">
+                            </a>
+                            <a href="#" class="social-icon__link">
+                                <img src="../img/email.png" alt="email">
+                            </a>
+                            <a href="#" class="social-icon__link">
+                                <img src="../img/rss.png" alt="rss">
+                            </a>
+                            <a href="#" class="social-icon__link">
+                                <img src="../img/facebook.png" alt="facebook">
+                            </a>
+                            <a href="#" class="social-icon__link">
+                                <img src="../img/vimeo.png" alt="vimeo">
+                            </a>
+
+                        </div>
                     </div>
                 </div>
             </div>

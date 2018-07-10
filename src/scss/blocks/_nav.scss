@@ -1,0 +1,23 @@
+.nav {
+    list-style: none;
+    padding: 0;
+    @include row;
+    &__item {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: 'Bebas';
+        font-weight: 400;
+        margin-right: 26px;
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+    &__link {
+        text-decoration: none;
+        color: $grey;
+    }
+    @media (min-width) {
+
+    }
+}

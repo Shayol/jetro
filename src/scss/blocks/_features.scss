@@ -1,0 +1,47 @@
+.features {
+    &__item {
+        padding: 40px 0 42px 0;
+        @include col(12);
+    }
+    &__icon {
+        margin-right: 20px;
+    }
+    &__header {
+        @include row;
+        margin-bottom: 38px;
+    }
+    &__title {
+        color: $orange;
+        font-family: 'Bebas';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &__text {
+        color: #414141;
+        font-family: "Helvetica Neue";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+    &__button {
+        margin-top: 20px;
+        width: 55px;
+        height: 30px;
+        text-decoration: none;
+        display: inline-block;
+        color: #ffffff;
+        font-family: 'Bebas';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 30px;
+        background-color: $orange;
+        color: #fff;
+        text-align: center;
+    }
+    @media (min-width: 720px) {
+        &__item {
+            @include col(4);
+        }
+    }
+}
