@@ -1,0 +1,18 @@
+.decor-streak {
+    @media (min-width: 940px) {
+        background-color: $washedOutRed;
+        position: absolute;
+        left: 0;
+        right: 0;
+        &\--top {
+            height: 60px;
+            top: 78px;
+            z-index: -1;
+        }
+        &\--bottom {
+            height: 264px;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+}

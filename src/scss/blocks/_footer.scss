@@ -31,4 +31,11 @@
             margin-top: 0;
         }
     }
+    @media (min-width: 940px) {
+        &__inner {
+            max-width: 960px;
+            border-right: 10px solid white;
+            border-left: 10px solid white;
+        }
+    }
 }

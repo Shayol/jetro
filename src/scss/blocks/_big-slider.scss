@@ -1,6 +1,5 @@
 .big-slider {
     display: none;
-
     @media (min-width: 720px) {
         height: 400px;
         display: block;
@@ -42,6 +41,13 @@
             font-size: 12px;
             font-weight: 400;
             color: #fff;
+        }
+    }
+    @media (min-width: 940px) {
+        &__inner {
+            max-width: 960px;
+            border-right: 10px solid white;
+            border-left: 10px solid white;
         }
     }
 }
