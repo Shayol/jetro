@@ -1,0 +1,13 @@
+.about-text {
+    @include row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    &__two-column {
+        width: 46%;
+    }
+
+    &__three-column {
+        width: 30%;
+    }
+}

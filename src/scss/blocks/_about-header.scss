@@ -1,0 +1,16 @@
+.about-header {
+    max-width: 960px;
+    color: #ffffff;
+    font-family: 'Bebas';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    height: 60px;
+    padding: 20px;
+    background-color: $red;
+    margin-bottom: 28px;
+    @media (min-width: 960px) {
+        border-right: 10px solid white;
+        border-left: 10px solid white;
+    }
+}

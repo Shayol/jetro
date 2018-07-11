@@ -1,0 +1,48 @@
+.about-main {
+    @include col(12);
+    
+    &__img {
+        float: left;
+        margin: 0 25px 25px 0;
+    }
+    &__paragraph {
+        color: #414141;
+        font-family: "Fira Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-bottom: 28px;
+    }
+
+    &__quote {
+        color: #414141;
+        font-family: "Fira Sans";
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        font-style: italic;
+        padding-left: 28px;
+        position: relative;
+        margin-bottom: 30px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            width: 8px;
+            height: 100%;
+            background-color: $orange;
+        }
+    }
+
+    @media (min-width: 720px) {
+        @include col(9);
+        padding-right: 20px;
+
+        &__quote {
+            padding-left: 78px;
+            &::before {
+                left: 50px;
+            }
+        }
+    }
+}

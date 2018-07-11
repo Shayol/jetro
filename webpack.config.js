@@ -29,11 +29,15 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        //exclude: /index\.html$/, //without this HtmlWebPackPlugin will not work with template file correctly
+        // exclude: /index\.html$/, //without this HtmlWebPackPlugin will not work with template file correctly
+        include: path.join(__dirname, 'src/html'),
         use: [
           {
             loader: "html-loader",
-            options: { minimize: true }
+            options: {
+              minimize: true,
+              interpolate: true
+            }
           }
         ]
       },
@@ -86,6 +90,11 @@ module.exports = {
       title: 'Title',
       template: "./src/html/index.html",
       filename: "./index.html"
+    }),
+    new HtmlWebPackPlugin({
+      title: 'Title',
+      template: "./src/html/about.html",
+      filename: "./about.html"
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",

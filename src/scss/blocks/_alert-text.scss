@@ -1,0 +1,29 @@
+.alert-text {
+    height: 60px;
+    font-family: "Fira Sans";
+    font-size: 14px;
+    font-style: italic;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+    &\--green {
+        border: 1px solid #98c601;
+        background-color: #effeb9;
+        color: #98c601;
+    }
+    &\--red {
+        border: 1px solid #eb5439;
+        background-color: #fbcbc1;
+        color: #eb5439;
+    }
+    &\--yellow {
+        border: 1px solid #fab418;
+        background-color: #ffe9ad;
+        color: #fab418;
+    }
+    &\--blue {
+        border: 1px solid #4d8fcb;
+        background-color: #d1e4f3;
+        color: #4d8fcb;
+    }
+}

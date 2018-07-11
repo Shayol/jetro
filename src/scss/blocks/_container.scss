@@ -4,8 +4,8 @@
     max-width: 940px;
     overflow: hidden;
     @include row;
+    align-items: stretch;
     height: 100%;
-    width: 100%;
 
     @media (min-width: 720px) {
         flex-wrap: nowrap;
