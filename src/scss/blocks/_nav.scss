@@ -1,6 +1,7 @@
 .nav {
     list-style: none;
     padding: 0;
+    
     @include row;
     &__item {
         display: inline-block;
@@ -9,6 +10,7 @@
         font-family: 'Bebas';
         font-weight: 400;
         margin-right: 26px;
+        padding-top: 20px;
     }
     &__item:last-child {
         margin-right: 0;
@@ -17,7 +19,13 @@
         text-decoration: none;
         color: $grey;
     }
-    @media (min-width) {
 
+    &__link\--active {
+        color: $red;
+    }
+    @media (min-width: 425px) {
+        &__item {
+            padding-top: 0;
+        }
     }
 }
