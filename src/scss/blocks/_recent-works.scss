@@ -14,6 +14,7 @@
     &__inner {
         justify-content: space-around;
     }
+
     &__item {
         @include col(12);
         margin: 0 0 20px 0;
@@ -46,19 +47,26 @@
         border-left: 1px solid #dbdbdb;
         border-bottom: 1px solid #dbdbdb;
     }
-    @media (min-width: 450px) {
+    @media (min-width: 520px) {
         &__item {
             @include col(5);
             margin-right: 0;
         }
+        &__inner {
+            flex-wrap: wrap;
+        }
     }
-    @media (min-width: 720px) {
+    @media (min-width: 920px) {
         &__inner {
             justify-content: space-between;
         }
         &__item {
-            @include col(4);
+            @include col(3);
             margin-bottom: 0;
+            margin-right: 0;
+        }
+        &__item\--portfolio {
+            margin-bottom: 40px;
         }
         margin-bottom: 48px;
     }
