@@ -1,0 +1,21 @@
+.arrow {
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    top: 50%;
+    border-top: 15px solid white;
+    z-index: 4;
+    opacity: 0.9;
+    cursor: pointer;
+
+    &__previous {
+        left: 25px;
+        border-left: 15px solid white;
+        transform: rotate(-45deg);
+    }
+    &__next {
+        right: 25px;
+        border-right: 15px solid white;
+        transform: rotate(45deg);
+    }
+}

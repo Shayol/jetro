@@ -2,7 +2,14 @@
     display: none;
     @media (min-width: 720px) {
         height: 400px;
+
+        &\--blog {
+            height: 300px;
+        }
         display: block;
+        &__inner {
+            position: relative;
+        }
         &__wrapper {
             height: 100%;
             display: flex;
@@ -10,10 +17,14 @@
         &__item {
             position: relative;
             background-size: cover;
-            min-width: 840px;
+            // min-width: 840px;
             width: 940px;
             height: 100%;
             background-repeat: no-repeat;
+        }
+
+        &\--blog &__item {
+            width: 670px;
         }
         &__item\--1 {
             background-image: url('../img/slide1-big.png');
@@ -48,6 +59,11 @@
             max-width: 960px;
             border-right: 10px solid white;
             border-left: 10px solid white;
+        }
+        &\--blog &__inner {
+            max-width: none;
+            border-right: none;
+            border-left: none;
         }
     }
 }
