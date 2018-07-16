@@ -1,57 +1,62 @@
 .big-slider {
     display: none;
+    &\--blog {
+        height: 200px;
+        display: block;
+    }
+    &\--blog &__item {
+        max-width: 470px;
+    }
+    &__inner {
+        position: relative;
+        overflow: hidden;
+    }
+    &__wrapper {
+        height: 100%;
+        display: flex;
+    }
+    &__item {
+        position: relative;
+        background-size: cover;
+        width: 940px;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+    &\--blog &__item {
+        max-width: 670px;
+    }
+    &__item\--1 {
+        background-image: url('../img/slide1-big.png');
+    }
+    &__descr {
+        width: 415px;
+        height: 125px;
+        padding: 20px 18px;
+        background-color: #e8673caf;
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+    }
+    &__header {
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: 'Bebas';
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    &__text {
+        color: #ffffff;
+        font-family: "Fira Sans";
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+    }
     @media (min-width: 720px) {
         height: 400px;
-
+        display: block;
         &\--blog {
             height: 300px;
-        }
-        display: block;
-        &__inner {
-            position: relative;
-        }
-        &__wrapper {
-            height: 100%;
-            display: flex;
-        }
-        &__item {
-            position: relative;
-            background-size: cover;
-            // min-width: 840px;
-            width: 940px;
-            height: 100%;
-            background-repeat: no-repeat;
-        }
-
-        &\--blog &__item {
-            width: 670px;
-        }
-        &__item\--1 {
-            background-image: url('../img/slide1-big.png');
-        }
-        &__descr {
-            width: 415px;
-            height: 125px;
-            padding: 20px 18px;
-            background-color: #e8673caf;
-            position: absolute;
-            left: 30px;
-            bottom: 30px;
-        }
-        &__header {
-            text-transform: uppercase;
-            color: #ffffff;
-            font-family: 'Bebas';
-            font-size: 18px;
-            font-weight: 400;
-            margin-bottom: 20px;
-        }
-        &__text {
-            color: #ffffff;
-            font-family: "Fira Sans";
-            font-size: 12px;
-            font-weight: 400;
-            color: #fff;
         }
     }
     @media (min-width: 940px) {

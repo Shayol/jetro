@@ -1,0 +1,16 @@
+.blog {
+    &__inner {
+        align-items: flex-start;
+        margin-top: 25px;
+        margin-bottom: 45px;
+    }
+    &__main {
+        @include col(12);
+    }
+    @media (min-width: 720px) {
+        &__main {
+            @include col(9);
+            padding-right: 50px;
+        }
+    }
+}

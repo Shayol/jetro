@@ -1,0 +1,13 @@
+.pagination {
+    &__link {
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        font-family: 'Bebas';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-decoration: none;
+        color: $orange;
+    }
+}

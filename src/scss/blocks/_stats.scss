@@ -1,0 +1,17 @@
+.stats {
+    &__header {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $orange;
+        font-family: 'Bebas';
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-family: 'Fira Sans';
+        color: $grey;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+}
