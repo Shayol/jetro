@@ -1,4 +1,7 @@
 .blog {
+    &__post {
+        display: none;
+    }
     &__inner {
         align-items: flex-start;
         margin-top: 25px;

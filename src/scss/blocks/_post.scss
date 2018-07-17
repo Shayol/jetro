@@ -68,9 +68,8 @@
         padding-left: 76px;
         padding-top: 25px;
         padding-right: 25px;
-        position: relative;       
+        position: relative;
     }
-
     &__quotes::before {
         content: '“';
         color: #ffffff;
@@ -83,9 +82,18 @@
         left: 30px;
         top: 20px;
         z-index: 1;
-    } 
-    @media (min-width: 1110px) {
+    }
+    &__link {
+        color: #a0a0a0;
+        font-family: "Fira Sans";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        display: inline-block;
+        text-decoration: none;
 
+    }
+    @media (min-width: 1110px) {
         &::before {
             content: '';
             width: 75px;

@@ -1,13 +1,20 @@
 .pagination {
-    &__link {
+    &__button {
         display: inline-block;
+        margin-right: 2px;
+        cursor: pointer;
         width: 26px;
         height: 26px;
         font-family: 'Bebas';
+        text-align: center;
         font-size: 14px;
         font-weight: 400;
-        line-height: 18px;
+        line-height: 26px;
         text-decoration: none;
-        color: $orange;
+        background-color: #f3b29d;
+        color: white;
+    }
+    &__active {
+        background-color: $orange;
     }
 }
