@@ -11,6 +11,11 @@ window.addEventListener('load', function (e) {
 
     var navLinks = document.querySelectorAll('.nav__link');
 
+    var prev = document.querySelector(".arrow__previous");
+    var next = document.querySelector(".arrow__next");
+
+    // filter items on portfolio page
+
     if (filtersParent) {
         filtersParent.addEventListener('click', (e) => {
 
@@ -38,6 +43,7 @@ window.addEventListener('load', function (e) {
         });
     }
 
+    //highlight current page in navigation
 
     navLinks.forEach(link => {
         var currLocation = window.location.pathname;
@@ -50,7 +56,9 @@ window.addEventListener('load', function (e) {
         }
     });
 
-    if (posts) {
+    //pagination
+
+    if (posts.length > 0) {
         var pagination = document.querySelector('.blog__pagination');
         var pagesNum = Math.ceil(posts.length / perPage);
         pagination.innerHTML = '';
@@ -93,6 +101,42 @@ window.addEventListener('load', function (e) {
         });
 
 
+    }
+
+    if(prev && next) {
+        prev.addEventListener('click', () => {
+            
+            var slider = document.querySelector('.big-slider__inner');
+            
+            var slideImg = slider.querySelector(".big-slider__img");
+            
+            var slideNum = parseInt(slideImg.dataset['slide']);
+
+            if(slideNum < 2) {
+                return
+            }
+            else {
+                slideImg.src = "../img/big-slide" + --slideNum + ".png";
+                slideImg.dataset['slide'] = slideNum;
+            }
+        })
+
+        next.addEventListener('click', () => {
+            
+            var slider = document.querySelector('.big-slider__inner');
+            
+            var slideImg = slider.querySelector(".big-slider__img");
+            
+            var slideNum = parseInt(slideImg.dataset['slide']);
+
+            if(slideNum > 5) {
+                return
+            }
+            else {
+                slideImg.src = "../img/big-slide" + ++slideNum + ".png";
+                slideImg.dataset['slide'] = slideNum;
+            }
+        })
     }
 
 

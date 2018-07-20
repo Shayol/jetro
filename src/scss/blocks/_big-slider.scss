@@ -11,23 +11,14 @@
         position: relative;
         overflow: hidden;
     }
-    &__wrapper {
-        height: 100%;
-        display: flex;
-    }
-    &__item {
-        position: relative;
-        background-size: cover;
-        width: 940px;
-        height: 100%;
-        background-repeat: no-repeat;
+    &__img {
+        width: 100%;
+        height: auto;
     }
     &\--blog &__item {
         max-width: 670px;
     }
-    &__item\--1 {
-        background-image: url('../img/slide1-big.png');
-    }
+
     &__descr {
         width: 415px;
         height: 125px;
