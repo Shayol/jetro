@@ -1,24 +1,21 @@
 .big-slider {
     display: none;
+
     &\--blog {
-        height: 200px;
         display: block;
-    }
-    &\--blog &__item {
-        max-width: 470px;
     }
     &__inner {
         position: relative;
         overflow: hidden;
     }
+    &\--blog &__inner {
+        margin-left: 0;
+        margin-right: 0;
+    }
     &__img {
         width: 100%;
         height: auto;
     }
-    &\--blog &__item {
-        max-width: 670px;
-    }
-
     &__descr {
         width: 415px;
         height: 125px;
@@ -43,12 +40,13 @@
         font-weight: 400;
         color: #fff;
     }
+
+    @media (min-width: 500px) {
+        height: 300px;
+        display: block;
+    }
     @media (min-width: 720px) {
         height: 400px;
-        display: block;
-        &\--blog {
-            height: 300px;
-        }
     }
     @media (min-width: 940px) {
         &__inner {

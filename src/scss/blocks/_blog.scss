@@ -9,11 +9,15 @@
     }
     &__main {
         @include col(12);
+        order: 1;
+        margin-top: 45px;
     }
     @media (min-width: 720px) {
         &__main {
             @include col(9);
             padding-right: 50px;
+            order: 0;
+            margin-top: 0;
         }
     }
 }
