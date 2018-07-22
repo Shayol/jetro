@@ -1,4 +1,5 @@
 import "../scss/main.scss";
+// import bigSlide2 from "../img/big-slide2.png";
 
 window.addEventListener('load', function (e) {
     NodeList.prototype.forEach = Array.prototype.forEach;
